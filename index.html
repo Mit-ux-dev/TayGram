@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TayGram</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" onerror="this.href='fontawesome/css/all.min.css';">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="header-container">
-            <div class="logo-title">
-                <img src="https://via.placeholder.com/30x30?text=TS" alt="Taylor Swift Logo" class="header-logo">
+            <a href="index.html" class="logo-title">
+                <img src="https://i.ibb.co/rfFn22nJ/pngaaa-com-1360896.png" alt="Taylor Swift Logo" class="header-logo" onerror="this.src='fallback-logo.png';">
                 <h1>TayGram</h1>
-            </div>
+            </a>
             <div class="search-bar">
-                <input type="text" placeholder="Search TayGram...">
+                <input type="text" id="searchInput" placeholder="Search TayGram...">
+            </div>
+            <div class="user-icon">
+                <a href="profile.html"><i class="fas fa-user"></i></a>
             </div>
         </div>
     </header>
@@ -24,87 +27,160 @@
     <!-- Main Content -->
     <main>
         <div class="posts-container">
-            <!-- Post 1: Updated Image Post -->
+            <!-- Post 1: Surprise Set -->
             <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="https://via.placeholder.com/40x40?text=TS" alt="Taylor Swift Profile" class="profile-pic">
+                        <img src="https://i.ibb.co/7xBBFwb3/IMG-4548.jpg" alt="Taylor Swift Profile" class="profile-pic" loading="lazy" onerror="this.src='fallback-profile.jpg';">
                         <div class="user-details">
                             <span class="username">Taylor Swift</span>
-                            <span class="description">in my vigilante shit era</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-content" data-type="image" data-src="https://i.ibb.co/PGzwwTpY/IMG-4547.jpg">
+                    <img src="https://i.ibb.co/PGzwwTpY/IMG-4547.jpg" alt="Taylor Swift Image" loading="lazy">
+                </div>
+                <div class="post-actions">
+                    <button><i class="fas fa-heart"></i></button>
+                    <button><i class="fas fa-comment"></i></button>
+                    <button><i class="fas fa-share"></i></button>
+                    <button class="download-btn" data-src="https://i.ibb.co/PGzwwTpY/IMG-4547.jpg"><i class="fas fa-download"></i></button>
+                </div>
+                <div class="post-meta">
+                    <span class="likes">1.7k likes</span>
+                    <div class="description-section">
+                        <span class="username">Taylor Swift</span>
+                        <span class="description">Welcome to the surprise set</span>
+                    </div>
+                    <span class="timestamp">Posted on May 6, 2025, 09:00</span>
+                </div>
+            </div>
+            <!-- Post 2: 1989 Launch -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://i.ibb.co/7xBBFwb3/IMG-4548.jpg" alt="Taylor Swift Profile" class="profile-pic" loading="lazy" onerror="this.src='fallback-profile.jpg';">
+                        <div class="user-details">
+                            <span class="username">Taylor Swift</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-content" data-type="image" data-src="https://i.ibb.co/DPYZvTCJ/IMG-4546.jpg">
+                    <img src="https://i.ibb.co/DPYZvTCJ/IMG-4546.jpg" alt="Taylor Swift Image" loading="lazy">
+                </div>
+                <div class="post-actions">
+                    <button><i class="fas fa-heart"></i></button>
+                    <button><i class="fas fa-comment"></i></button>
+                    <button><i class="fas fa-share"></i></button>
+                    <button class="download-btn" data-src="https://i.ibb.co/DPYZvTCJ/IMG-4546.jpg"><i class="fas fa-download"></i></button>
+                </div>
+                <div class="post-meta">
+                    <span class="likes">2.2k likes</span>
+                    <div class="description-section">
+                        <span class="username">Taylor Swift</span>
+                        <span class="description">Taylor watching the launch off 1989</span>
+                    </div>
+                    <span class="timestamp">Posted on May 5, 2025, 16:00</span>
+                </div>
+            </div>
+            <!-- Post 3: Vigilante Shit -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="user-info">
+                        <img src="https://i.ibb.co/7xBBFwb3/IMG-4548.jpg" alt="Taylor Swift Profile" class="profile-pic" loading="lazy" onerror="this.src='fallback-profile.jpg';">
+                        <div class="user-details">
+                            <span class="username">Taylor Swift</span>
                         </div>
                     </div>
                 </div>
                 <div class="post-content" data-type="image" data-src="https://i.ibb.co/cc94M8w9/IMG-4545.jpg">
-                    <img src="https://i.ibb.co/cc94M8w9/IMG-4545.jpg" alt="Taylor Swift Image">
+                    <img src="https://i.ibb.co/cc94M8w9/IMG-4545.jpg" alt="Taylor Swift Image" loading="lazy">
                 </div>
                 <div class="post-actions">
                     <button><i class="fas fa-heart"></i></button>
                     <button><i class="fas fa-comment"></i></button>
                     <button><i class="fas fa-share"></i></button>
+                    <button class="download-btn" data-src="https://i.ibb.co/cc94M8w9/IMG-4545.jpg"><i class="fas fa-download"></i></button>
                 </div>
                 <div class="post-meta">
                     <span class="likes">1.2k likes</span>
+                    <div class="description-section">
+                        <span class="username">Taylor Swift</span>
+                        <span class="description">in my vigilante shit era</span>
+                    </div>
                     <span class="timestamp">Posted on May 3, 2025, 14:30</span>
                 </div>
             </div>
-            <!-- New Post: GIF Post -->
+            <!-- Post 4: GIF Post -->
             <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="https://via.placeholder.com/40x40?text=TS" alt="Taylor Swift Profile" class="profile-pic">
+                        <img src="https://i.ibb.co/7xBBFwb3/IMG-4548.jpg" alt="Taylor Swift Profile" class="profile-pic" loading="lazy" onerror="this.src='fallback-profile.jpg';">
                         <div class="user-details">
                             <span class="username">Taylor Swift</span>
-                            <span class="description">Taylor sending love</span>
                         </div>
                     </div>
                 </div>
                 <div class="post-content" data-type="image" data-src="https://www.logodesign.org/wp-content/uploads/2024/12/image.gif">
-                    <img src="https://www.logodesign.org/wp-content/uploads/2024/12/image.gif" alt="Taylor Swift GIF">
+                    <img src="https://www.logodesign.org/wp-content/uploads/2024/12/image.gif" alt="Taylor Swift GIF" loading="lazy">
                 </div>
                 <div class="post-actions">
                     <button><i class="fas fa-heart"></i></button>
                     <button><i class="fas fa-comment"></i></button>
                     <button><i class="fas fa-share"></i></button>
+                    <button class="download-btn" data-src="https://www.logodesign.org/wp-content/uploads/2024/12/image.gif"><i class="fas fa-download"></i></button>
                 </div>
                 <div class="post-meta">
                     <span class="likes">1.8k likes</span>
+                    <div class="description-section">
+                        <span class="username">Taylor Swift</span>
+                        <span class="description">Taylor sending love</span>
+                    </div>
                     <span class="timestamp">Posted on May 3, 2025, 10:00</span>
                 </div>
             </div>
-            <!-- Post 2: Existing Video Post -->
+            <!-- Post 5: Streamable Video -->
             <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="https://via.placeholder.com/40x40?text=TS" alt="Taylor Swift Profile" class="profile-pic">
+                        <img src="https://i.ibb.co/7xBBFwb3/IMG-4548.jpg" alt="Taylor Swift Profile" class="profile-pic" loading="lazy" onerror="this.src='fallback-profile.jpg';">
                         <div class="user-details">
                             <span class="username">Taylor Swift</span>
-                            <span class="description">Behind the scenes of the tour! 🫶 #Swifties</span>
                         </div>
                     </div>
                 </div>
-                <div class="post-content" data-type="video" data-src="https://www.w3schools.com/html/mov_bbb.mp4">
-                    <video controls>
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    </video>
+                <div class="post-content" data-type="video" data-src="https://streamable.com/tr4ul9">
+                    <div style="position:relative; width:100%; height:0px; padding-bottom:56.25%;">
+                        <iframe allow="fullscreen" allowfullscreen src="https://streamable.com/e/tr4ul9?loop=0" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+                    </div>
                 </div>
                 <div class="post-actions">
                     <button><i class="fas fa-heart"></i></button>
                     <button><i class="fas fa-comment"></i></button>
                     <button><i class="fas fa-share"></i></button>
+                    <button class="download-btn" data-src="https://streamable.com/tr4ul9"><i class="fas fa-download"></i></button>
                 </div>
                 <div class="post-meta">
                     <span class="likes">2.5k likes</span>
+                    <div class="description-section">
+                        <span class="username">Taylor Swift</span>
+                        <span class="description">Behind the scenes of the tour! 🫶 #Swifties</span>
+                    </div>
                     <span class="timestamp">Posted on May 2, 2025, 09:15</span>
                 </div>
             </div>
         </div>
     </main>
 
+    <!-- Footer -->
+    <footer>
+        <p>This site is made by a Swiftie with love.</p>
+    </footer>
+
     <!-- Modal for Full-Sized Media -->
     <div class="modal" id="mediaModal">
         <span class="close">×</span>
-        <div class="modal-content">
+        <div class="modal-content" id="modalContent">
             <img id="modalImage" src="" alt="Full Image">
             <video id="modalVideo" controls>
                 <source src="" type="video/mp4">
